@@ -1,6 +1,6 @@
 <h1 align="center">Windows<br />
 <div align="center">
-<a href="https://github.com/dockur/windows"><img src="https://github.com/dockur/windows/raw/master/.github/logo.png" title="Logo" style="max-width:100%;" width="128" /></a>
+<a href="https://github.com/zzz-creator/windows"><img src="https://github.com/zzz-creator/windows/raw/master/.github/logo.png" title="Logo" style="max-width:100%;" width="128" /></a>
 </div>
 <div align="center">
 
@@ -31,7 +31,7 @@ Windows inside a Docker container.
 ```yaml
 services:
   windows:
-    image: dockurr/windows
+    image: zzz-creatorr/windows
     container_name: windows
     environment:
       VERSION: "11"
@@ -53,22 +53,22 @@ services:
 ##### Via Docker CLI:
 
 ```bash
-docker run -it --rm --name windows -e "VERSION=11" -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN -v "${PWD:-.}/windows:/storage" --stop-timeout 120 docker.io/dockurr/windows
+docker run -it --rm --name windows -e "VERSION=11" -p 8006:8006 --device=/dev/kvm --device=/dev/net/tun --cap-add NET_ADMIN -v "${PWD:-.}/windows:/storage" --stop-timeout 120 docker.io/zzz-creatorr/windows
 ```
 
 ##### Via Kubernetes:
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/dockur/windows/refs/heads/master/kubernetes.yml
+kubectl apply -f https://raw.githubusercontent.com/zzz-creator/windows/refs/heads/master/kubernetes.yml
 ```
 
 ##### Via Github Codespaces:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dockur/windows)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/zzz-creator/windows)
 
 ##### Via a graphical installer:
 
-[![Download WinBoat](https://github.com/dockur/windows/raw/master/.github/winboat.png)](https://winboat.app)
+[![Download WinBoat](https://github.com/zzz-creator/windows/raw/master/.github/winboat.png)](https://winboat.app)
 
 ## FAQ 💬
 
@@ -120,7 +120,7 @@ kubectl apply -f https://raw.githubusercontent.com/dockur/windows/refs/heads/mas
   | `2003` | Windows Server 2003       | 0.6 GB   |
 
 > [!TIP]
-> To install ARM64 versions of Windows use [dockur/windows-arm](https://github.com/dockur/windows-arm/).
+> To install ARM64 versions of Windows use [zzz-creator/windows-arm](https://github.com/zzz-creator/windows-arm/).
 
 ### How do I change the storage location?
 
@@ -376,7 +376,7 @@ kubectl apply -f https://raw.githubusercontent.com/dockur/windows/refs/heads/mas
 
 ### How do I run macOS in a container?
 
-  You can use [dockur/macos](https://github.com/dockur/macos) for that. It shares many of the same features, except for the automatic installation.
+  You can use [zzz-creator/macos](https://github.com/zzz-creator/macos) for that. It shares many of the same features, except for the automatic installation.
 
 ### How do I run a Linux desktop in a container?
 
@@ -390,13 +390,13 @@ kubectl apply -f https://raw.githubusercontent.com/dockur/windows/refs/heads/mas
 
 *The product names, logos, brands, and other trademarks referred to within this project are the property of their respective trademark holders. This project is not affiliated, sponsored, or endorsed by Microsoft Corporation.*
 
-[build_url]: https://github.com/dockur/windows/
-[hub_url]: https://hub.docker.com/r/dockurr/windows/
-[tag_url]: https://hub.docker.com/r/dockurr/windows/tags
-[pkg_url]: https://github.com/dockur/windows/pkgs/container/windows
+[build_url]: https://github.com/zzz-creator/windows/
+[hub_url]: https://hub.docker.com/r/zzz-creatorr/windows/
+[tag_url]: https://hub.docker.com/r/zzz-creatorr/windows/tags
+[pkg_url]: https://github.com/zzz-creator/windows/pkgs/container/windows
 
-[Build]: https://github.com/dockur/windows/actions/workflows/build.yml/badge.svg
-[Size]: https://img.shields.io/docker/image-size/dockurr/windows/latest?color=066da5&label=size
-[Pulls]: https://img.shields.io/docker/pulls/dockurr/windows.svg?style=flat&label=pulls&logo=docker
-[Version]: https://img.shields.io/docker/v/dockurr/windows/latest?arch=amd64&sort=semver&color=066da5
-[Package]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fipitio.github.io%2Fbackage%2Fdockur%2Fwindows%2Fwindows.json&query=%24.downloads&logo=github&style=flat&color=066da5&label=pulls
+[Build]: https://github.com/zzz-creator/windows/actions/workflows/build.yml/badge.svg
+[Size]: https://img.shields.io/docker/image-size/zzz-creatorr/windows/latest?color=066da5&label=size
+[Pulls]: https://img.shields.io/docker/pulls/zzz-creatorr/windows.svg?style=flat&label=pulls&logo=docker
+[Version]: https://img.shields.io/docker/v/zzz-creatorr/windows/latest?arch=amd64&sort=semver&color=066da5
+[Package]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fipitio.github.io%2Fbackage%2Fzzz-creator%2Fwindows%2Fwindows.json&query=%24.downloads&logo=github&style=flat&color=066da5&label=pulls
